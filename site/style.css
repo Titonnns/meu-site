@@ -1,0 +1,38 @@
+body {
+    animation: piscar 1s infinite;
+}
+
+/* animação do fundo */ 
+    @keyframes piscar {
+        0% { background: blue; }
+         20% { background: orange; }
+         40% { background: green; }
+         60% { background: red; }
+         80% { background: white; }
+         100% { background: yellow; } 
+    }
+    /* animação de pulo */
+    @keyframes pular {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); } /* sobe */
+    100% { transform: translateY(0); } /* desce */ 
+    }
+
+h1 {
+   animation: pular 0.6s infinite ease-in-out;
+    
+    color: brown;    
+}
+p {
+     animation: pular 0.6s infinite ease-in-out;
+    color: brown;
+}
+img {
+    animation: pular 0.6s infinite ease-in-out;
+}
+}
+@keyframes pular {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);} /* sobe */
+    100% {transform: translateY(0);} /* desce */
+}
